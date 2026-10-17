@@ -20,8 +20,18 @@ def test_empty_login():
         print("PASS: Empty login fields detected")
     else:
         print("FAIL: Empty field test failed")
+        
+def test_username_only():
+    username = "student01"
+    password = ""
+
+    if username and not password:
+        print("PASS: Missing password detected")
+    else:
+        print("FAIL: Username-only test failed")
 
 
 if __name__ == "__main__":
     test_valid_login()
     test_empty_login()
+    test_username_only()

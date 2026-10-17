@@ -25,3 +25,4 @@ def test_invalid_attendance():
 if __name__ == "__main__":
     test_mark_attendance()
     test_invalid_attendance()
+    test_username_only()
